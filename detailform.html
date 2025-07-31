@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User-details</title>
+    <title>User-details </title>
 </head>
 <body>
     <h1>USER-DETAILS</h1>
     <forms>
         <label for="username">USERNAME</label>
-        <input type="text" id="username" placeholder="Enter your name" name="username" ><br><br>
+        <input type="text" id="username" placeholder="Enter your name" name="username" autofocus><br><br>
 
         <label for="password">PASSWORD</label>
-        <input type="password" id="password" placeholder="enter your age" name="password"><br><br>
+        <input type="password" id="password" placeholder="enter your age" name="password" required><br><br>
 
         <label for="age">AGE</label>
-        <input type="number" id="age" placeholder="Enter your age" name="age" min="18" max="60" name="age" value="18"><br><br>
+        <input type="number" id="age" placeholder="Enter your age" name="age" min="18" max="60" name="age" value="18" readonly><br><br>
 
         <label for="dateofbirth">DATE OF BIRTH</label>
         <input type="date" id="dateofbirth" name="dateofbirth"><br><br>
@@ -46,10 +46,45 @@
 
         <label for="url">ENTER YOUR PORTFOLIO</label>
         <input type="url" id="url" name="url" placeholder="Enter your portfolio link"><br><br>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <label for="search">search</label>
+        <input type="text" placeholder="Search.." name="search">
 
-        <input type="reset" name="reset" value="CLEAR-FORM">
 
+        <h4>Gender</h4>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">MALE</label>
+        <input type="radio" id="Female" name="gender" value="Female">
+        <label for="male">FEMALE</label>
+        <input type="radio" id="others" name="gender" value="others">
+        <label for="others">OTHERS</label>
 
+        <br><br>
+        <label for="city">Select your city</label>
+        <select id="city" name="city">
+            <option value="chennai">Chennai</option>
+            <option value="Thiruvallur">Thiruvallur</option>
+            <option value="Kachipuram">Kachipuram</option>
+            <option value="Ranipet">Ranipet</option>
+        </select>
+
+        <h2>choose your course</h2>
+        <input type="checkbox" id="java" value="java" name="course">
+        <label for="java">JAVA</label><br>
+        <input type="checkbox" id="python" value="python" name="course">
+        <label for="java">PYTHON</label><br>
+        <input type="checkbox" id="c++" value="c++" name="course">
+        <label for="java">c++</label><br>
+        <input type="checkbox" id="golang" value="golang" name="course">
+        <label for="java">GOLANG</label><br><br>
+
+        <label for="address">Enter your Address</label>
+        <textarea id="address" name="address" placeholder="enter your current address" rows="5" cols="30" maxlength="400"></textarea><br><br>
+       
+        <input type="reset" id="reset" name="reset">
+
+        <input type="submit" id="sumbit" name="submit">
 
     </forms>
     

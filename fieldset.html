@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <fieldset>
+        <legend>PERSONAL DETAILS</legend>
+        <label for="username">username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your full name"><br><br>
+        <label>password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+        <label for="DOB"> Enter your DOB</label>
+        <input type="date" id="DOB" name="DOB" ><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>ADDRESS</legend>
+        <label for="doorno">door-no</label>
+        <input type="text" id="doorno" name="doorno" placeholder="Enter your Door number"><br><br>
+        <label for="street">street</label>
+        <input type="text" is="street" name="street" placeholder="Enter your street name"><br><br>
+        <label for="city">select your city</label>
+        <select name="city" id="city">
+        <option value="chennai">chennai</option>
+        <option value="thiruvallur">thiruvallur</option>
+        <option value="kovai">kovai</option>
+        <option value="ranipet">Ranipet</option>
+        <option value="kachipuram">Kachipuram</option>
+        </select><br><br>
+
+        <label for="state">select your state</label>
+        <select id="state" name="state">
+            <option>Tamilnadu</option>
+            <option>kerala</option>
+            <option>andhra</option>
+            <option>karanataka</option>
+            <option>delhi</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>DOCUMENTS(ID-PROOF)</legend>
+        <label for="aadhar">Aadher card</label>
+        <input type="file" id="aadhar" name="aadhar" ><br><br>
+        <label for="pan">Pan card</label>
+        <input type="file" id="pan" name="pan" ><br><br>
+        <label for="voter">Voter ID</label>
+        <input type="file" id="voter" name="voter" ><br><br>
+        <label for="ration">Ration card</label>
+        <input type="file" id="ration" name="ration" ><br><br>
+    </fieldset>
+    
+</body>
+</html>
